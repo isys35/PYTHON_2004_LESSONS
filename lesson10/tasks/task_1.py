@@ -1,4 +1,3 @@
-"ss".isalpha()
 
 def calculate_max_min_avg(*args):
     return min(args), max(args), sum(args) / len(args)
