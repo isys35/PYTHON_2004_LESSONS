@@ -8,7 +8,7 @@ class Chain:
         if n == 1:
             self.next = None
         else:
-            self.next = self.__class__(name, n-1, index + 1)
+            self.next = self.__class__(name, n - 1, index + 1)
 
     def __repr__(self):
         return f"{self.__class__.__name__} {self.name} {self.index}"
@@ -16,8 +16,6 @@ class Chain:
     def __getitem__(self, item):
         if not self.index:
             raise IndexError
-
-
 
 
 if __name__ == '__main__':
